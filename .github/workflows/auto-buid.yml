@@ -1,8 +1,6 @@
 name: .NET Core
 
-on:
-  push:
-    branches: [IlyaPrikhach-CI-configuration] 
+on: [push] 
 
 jobs:
   build:
