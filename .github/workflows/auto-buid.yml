@@ -40,3 +40,8 @@ jobs:
           git push https://${{ secrets.ACCESS_TOKEN }}@github.com/${GITHUB_ACTOR}/${GITHUB_ACTOR}.github.io.git master
           curl "https://api.telegram.org/bot${{ secrets.BOT_TOKEN }}/sendMessage?text=$COMMIT_MESSAGE %0ALook at ${GITHUB_ACTOR}.github.io %0ARepository%3A github.com/${GITHUB_ACTOR}/${GITHUB_ACTOR}.github.io&chat_id=${{ secrets.ADMIN_ID }}"
       working-directory: ./output
+  Test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Test
+      run: echo "Hello"  
