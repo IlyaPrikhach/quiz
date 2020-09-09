@@ -2,7 +2,8 @@ name: .NET Core
 
 on:
   push:
-    branches: [ master ]
+    branches:
+      - IlyaPrikhach-CI-configuration
   pull_request:
     branches: [ master ]
 
