@@ -1,11 +1,6 @@
 name: .NET Core
 
-on:
-  push:
-    branches:
-      - IlyaPrikhach-CI-configuration
-  pull_request:
-    branches: [ master ]
+on: [push]
 
 jobs:
   build:
