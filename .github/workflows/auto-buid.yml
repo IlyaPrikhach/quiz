@@ -1,10 +1,12 @@
 name: .NET Core
 
-on: [push]
+on:
+  push:
+    branches: 
+      - IlyaPrikhach-CI-configuration 
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
